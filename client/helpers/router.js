@@ -8,7 +8,7 @@ Meteor.Router.add({
 /**
  * Creates a global function to search for the current URL. This will be used
  * to determine which navbar <li> will be active.
- * @return {[type]} [description]
+ * @return String the url
  */
 curPath = function() {
 	c=window.location.pathname;
