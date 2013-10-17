@@ -1,6 +1,7 @@
 Meteor.Router.add({
 	'/': 'home',
-	'/about' : 'about'
+	'/about' : 'about',
+	'/generic' : 'generic_courses'
 });
 
 
