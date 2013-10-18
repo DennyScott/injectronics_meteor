@@ -4,7 +4,12 @@
 			{{> bs_slider}}
 		</div>
 		<div class="col-md-9" role="main" id="course-names">
-			{{> generic_courses}}
+			{{#if displayCourses}}
+				{{#each displayCourses}}
+					{{> generic_courses}}
+				{{/each}}
+			{{/if}}
+			
 		</div>
 	</div>
 </template>

@@ -5,3 +5,10 @@ Template.courses.rendered = function () {
 				$(this).popover('show');
 			});
 };
+
+
+Template.courses.helpers({
+	displayCourses : function(){
+		return CourseTypes.find({}, {sort:{order:1}});
+	}
+});

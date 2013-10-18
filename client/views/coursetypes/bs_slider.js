@@ -1,3 +1,5 @@
-Template.bs_slider.rendered = function(){
-
-};
+Template.bs_slider.helpers({
+	coursetypes : function(){
+		return CourseTypes.find({},{sort:{order:1}});
+	}
+});

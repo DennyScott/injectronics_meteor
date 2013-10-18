@@ -1,20 +1,22 @@
 <template name="generic_courses">
-	<div class="panel panel-default" id="generic">
+	<div class="panel panel-default" id="{{name}}">
 		<div class="panel-heading">
-			<h3 class="panel-title">Generic Courses</h3>
+			<h3 class="panel-title">{{name}} Courses</h3>
 		</div>
 		<div class="panel-body">
+			<ul class="list-group">
 			{{#if courses}}
 			{{#each courses}}
-				<div class="panel panel-default course">
-					<div class="panel-body" id = "generic_buttons">
+				
+					<li class="list-group-item">
 						{{name}}
 						<button type="button" class="btn btn-primary pull-right add-to-cart" rel="popover" data-content="Please sign in before adding." data-original-title="Wait!">${{cost}}</button>
-					</div>
-				</div>
+					</li>
+				
 
 			{{/each}}
 			{{/if}}
+			</ul>
 		</div>
 	</div>
 </template>
