@@ -4,4 +4,5 @@
 
 Deps.autorun(function () {
 	Meteor.subscribe("courses");
+	Meteor.subscribe("courseTypes");
 });

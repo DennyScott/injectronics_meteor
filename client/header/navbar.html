@@ -36,6 +36,11 @@
 
           
           <li><a>{{loginButtons}}</a></li>
+          
+          {{admin}}
+          {{#if myAdmin}}
+              <li><a href="#">Admin</a></li>
+          {{/if}}
           <li><a href="#">Cart</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->

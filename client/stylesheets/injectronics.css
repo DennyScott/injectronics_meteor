@@ -31,3 +31,15 @@
 	color:#716b7a;
 	padding:5px 20px;
 }
+
+.accounts-dialog {
+	width: 220px;
+}
+
+#signup-link{
+	margin-top:8px;
+}
+
+.add-to-cart .popover-title{
+	background-color: rgb(255,119,119);
+}
