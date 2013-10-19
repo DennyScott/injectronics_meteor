@@ -1,7 +1,9 @@
 Meteor.Router.add({
 	'/': 'home',
 	'/about' : 'about',
-	'/courses' : 'courses'
+	'/courses' : 'courses',
+	'/cart' : 'cart',
+	'/checkout' : 'checkout'
 });
 
 

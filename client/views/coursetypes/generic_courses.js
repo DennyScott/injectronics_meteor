@@ -16,7 +16,14 @@ Template.generic_courses.events({
 				Cart.insert({
 					product: key
 				});
+
+			$('#myModal').modal('show');
 			}
 		}
+	},
+
+	'click #toCheckout':function(e){
+		$('#myModal').modal('hide');
+		Meteor.Router.to('/checkout');
 	}
 });
