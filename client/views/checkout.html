@@ -11,7 +11,9 @@
 				
 					<li class="list-group-item">
 						{{name}}
-						<button type="button" id="{{_id}}" class="btn btn-danger pull-right remove btn-xs">Remove</button>
+
+						<button type="button" id="{{_id}}" class="btn btn-danger pull-right remove btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+						<span class="pull-right cost-checkout">${{cost}}</span>
 					</li>
 				
 			{{else}}
@@ -26,7 +28,7 @@
 		</div>
 		{{#if cartNotEmpty}}
 			<ul class="list-group">
-    			<li class="list-group-item success">Total: <span class="pull-right">$100</span></li>
+    			<li class="list-group-item total">Total: <span class="pull-right">${{getTotalCost}}</span></li>
     		</ul>
 		{{/if}}
 	</div>

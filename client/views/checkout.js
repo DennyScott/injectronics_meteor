@@ -1,19 +1,24 @@
 Template.checkout.helpers({
 	displayCart: function(){
-		
-		// var items = Cart.find().fetch();
-		// fullItems = [];
-
-
-		// for (var i = 0; i < items.length; i++) {
-		// 	fullItems.push(Courses.findOne({_id:items[i]['product']}));
-		// }
 
 		return Cart.find();
 	},
 
 	cartNotEmpty: function(){
 		return Cart.find().count() !== 0;
+	},
+
+	getTotalCost: function(){
+
+		var items = Cart.find().fetch();
+
+		var total = 0;
+
+		for (var i = 0; i < items.length; i++) {
+			total += items[i]['cost'];
+		}
+
+		return total;
 	}
 });
 
