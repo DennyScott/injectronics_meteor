@@ -10,7 +10,6 @@ Template.generic_courses.events({
 		e.preventDefault();
 
 		var key = $(e.target).attr('id');
-		alert($(e.target).attr('id'));
 
 		if(Meteor.user() !== null){
 			if(Cart.find({product:key}).count()===0){

@@ -26,10 +26,29 @@
 	border-right: 1px solid #563d7c;
 }
 
+#main{
+	background-image: url('/img/redBack.jpg');
+}
+
+
+
 .bs-sidebar .nav > li > a {
 	display:block;
 	color:#716b7a;
 	padding:5px 20px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+#content {
+	margin-top: 20px;
 }
 
 .accounts-dialog {
