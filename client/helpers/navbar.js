@@ -18,5 +18,9 @@ Template.navbar.helpers({
 	},
 	myAdmin : function() {
 		return Session.get('myAdmin');
+	},
+
+	inCart : function() {
+		return Cart.find().count();
 	}
 });

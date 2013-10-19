@@ -1,0 +1,1 @@
+Cart = new Meteor.Collection(null);
