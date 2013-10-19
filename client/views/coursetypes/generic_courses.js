@@ -13,8 +13,14 @@ Template.generic_courses.events({
 
 		if(Meteor.user() !== null){
 			if(Cart.find({product:key}).count()===0){
+				var item = Courses.findOne({_id:key});
 				Cart.insert({
-					product: key
+					product: key,
+					name: item.name,
+					cost:item.cost,
+					number: item.number,
+					type: item.type
+
 				});
 
 			$('#myModal').modal('show');
