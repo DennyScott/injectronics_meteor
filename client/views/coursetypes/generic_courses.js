@@ -11,7 +11,7 @@ Template.generic_courses.events({
 
 		var key = $(e.target).attr('id');
 
-		if(Meteor.user() !== null){
+		
 			if(Cart.find({product:key}).count()===0){
 				var item = Courses.findOne({_id:key});
 				Cart.insert({
@@ -25,7 +25,7 @@ Template.generic_courses.events({
 
 			$('#myModal').modal('show');
 			}
-		}
+		
 	},
 
 	'click #toCheckout':function(e){

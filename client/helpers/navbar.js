@@ -16,8 +16,8 @@ Template.navbar.helpers({
 			Session.set('myAdmin', result);
 		});
 	},
-	myAdmin : function() {
-		return Session.get('myAdmin');
+	user: function() {
+		return Meteor.user();
 	},
 
 	inCart : function() {

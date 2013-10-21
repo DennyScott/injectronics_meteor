@@ -2,8 +2,22 @@ Meteor.Router.add({
 	'/': 'home',
 	'/about' : 'about',
 	'/courses' : 'courses',
-	'/checkout' : 'checkout'
+	'/checkout' : 'checkout',
+	'/dashboard' : 'dashboard'
 });
+
+Meteor.Router.filters({
+	'requireLogin' : function(page) {
+		if (Meteor.user())
+			return page;
+		else if (Meteor.loggingIn())
+			return 'loading';
+		else
+			return 'accessDenied';
+	}
+});
+
+Meteor.Router.filter('requireLogin', {only: 'dashboard'});
 
 
 
