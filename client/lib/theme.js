@@ -9,15 +9,15 @@ theme = function () {
         }
     });
 
-//     servicesCircle.initialize();
-
-//     staticHeader.initialize();
-
-//     portfolioItem.initialize();
 
 
-//     // segun esto corrige el pedo del dropdown en tablets and such
-//     // hay que testearlo!
+    // staticHeader.initialize();
+
+    // portfolioItem.initialize();
+
+
+    // segun esto corrige el pedo del dropdown en tablets and such
+    // hay que testearlo!
 //     $('.dropdown-toggle').click(function(e) {
 //         e.preventDefault();
 //         setTimeout($.proxy(function() {
@@ -45,19 +45,4 @@ theme = function () {
 //     }
 // }
 
-// var servicesCircle = {
-//     initialize: function () {
-//         var $container = $(".services_circles");
-//         var $texts = $container.find(".description .text");
-//         var $circles = $container.find(".areas .circle");
-
-//         $circles.click(function () {
-//             var index = $circles.index(this);
-//             $texts.fadeOut();
-//             $texts.eq(index).fadeIn();
-//             $circles.removeClass("active");
-//             $(this).addClass("active");
-//         });
-//     }
-// }
 };

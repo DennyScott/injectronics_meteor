@@ -39,7 +39,8 @@
 	/*background-repeat: no-repeat;*/
 
 background-repeat: no-repeat;
-	background: #f2f2f2;
+	/*background: #f2f2f2;*/
+	background-color:white;
 }
 
 
@@ -90,9 +91,9 @@ background-repeat: no-repeat;
  */
 
 #footer{
-	position: relative;
+
 	background: #2a2d30 url(/img/footer-glow.png) no-repeat top center;
-	color: #fff;
+
 }
 
 #footer-cols{
@@ -188,7 +189,7 @@ background-repeat: no-repeat;
  * Social
  */
 
-.social{
+.social_end{
 	position: absolute;
 	top: 15px;
 	right: 0px;
@@ -196,7 +197,7 @@ background-repeat: no-repeat;
 	overflow: hidden;
 }
 
-.social li{
+.social_end li{
 	display: block;
 	width: 32px;
 	height: 32px;
@@ -205,13 +206,13 @@ background-repeat: no-repeat;
 	margin-bottom: 10px;
 }
 
-#bottom .social a{
+#bottom .social_end a{
 	display: block;
 	width: 32px;
 	height: 32px;
 	text-indent: -9000px;
 }
 
-#bottom .social a:hover{
+#bottom .social_end a:hover{
 	background-position: 0px -32px;
 }
