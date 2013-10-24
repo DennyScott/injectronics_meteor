@@ -173,6 +173,10 @@
     #feature_slider #slide-right:hover {
       opacity: 1; }
 
+    .wrapper img{
+      max-width:211px;
+    }
+
 /* Showcase services
 -------------------------------------------------- */
 #showcase {
