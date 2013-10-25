@@ -306,8 +306,7 @@ header {
   body {
     padding-top: 0 !important; }
 
-  .navbar.navbar-inverse {
-    background: #252528; } }
+   }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
     margin-bottom: 0; }

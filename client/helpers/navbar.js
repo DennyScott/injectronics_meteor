@@ -22,5 +22,12 @@ Template.navbar.helpers({
 
 	inCart : function() {
 		return Cart.find().count();
+	},
+
+	navtype: function() {
+		if(Meteor.Router.page() === 'home')
+			return 'navbar-fixed-top';
+		else
+			return 'navbar-static-top';
 	}
 });
