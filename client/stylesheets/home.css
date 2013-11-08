@@ -1,5 +1,9 @@
 /* Main Slider
 -------------------------------------------------- */
+
+#features{
+  line-height:20px!important;
+}
 #feature_slider {
   height: 720px;
   height: 480px;

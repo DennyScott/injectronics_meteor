@@ -1,6 +1,33 @@
 <template name="courses">
 	<div class="container">
-		<div class="row">
+		<div class="page-title">
+			<h2>
+				<i class = "fa fa-desktop"></i>
+				Courses
+				<small>Generic Courses</small>
+			</h2>
+			<hr>	
+		</div>
+
+		<div class="shop-items">
+			<div class="row">
+				<div class="col-md-9 col-md-push-3">
+
+					<!--BreadCrumbs -->
+					<ul class="breadcrumb">
+                   		<li><a href="index.html">Home</a> <span class="divider"></span></li>
+                  		<li><a href="items.html">Smartphone</a> <span class="divider"></span></li>
+                 		<li class="active">Apple</li>
+                 	</ul>
+
+                 	{{> displayItems}}
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- <div class="row">
 			<div class="col-md-3">
 				{{> bs_slider}}
 			</div>
@@ -12,6 +39,6 @@
 				{{/if}}
 				
 			</div>
-		</div>
+		</div> -->
 	</div>
 </template>
