@@ -1,5 +1,24 @@
 /* Main Slider
 -------------------------------------------------- */
+.image-header{
+  background-color: #0a0705;
+  background-image: url(/img/car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin : 0;
+  padding-bottom: 150px;
+ }
+
+ .header-content {
+  margin-top : 450px;
+  background-color: rgba(0,0,0,0.7);
+  margin-left: 40px;
+  padding:20px;
+  border:2px solid;
+  border-radius:25px;
+  color:white;
+ }
 
 #features{
   line-height:20px!important;

@@ -7,6 +7,18 @@ Handlebars.registerHelper('active', function(path) {
     return curPath() == path ? 'active' : '';
 });
 
+Handlebars.registerHelper('each_with_index', function(items, options) {
+  var out = '';
+  for(var i=0, l=items.length; i<l; i++) {
+    var key = 'Branch-' + i;
+    out = out + Spark.labelBranch(key,function(){
+      options.fn({data: items[i], index: i});
+    });
+  }
+
+  return out;
+});
+
 Template.navbar.helpers({
 	admin: function() {
 		Meteor.call('isAdmin', 1, function (error, result) {
